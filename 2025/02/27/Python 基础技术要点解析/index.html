@@ -1,0 +1,212 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>常见问题自助解决文档 | 天雨</title>
+  <meta name="author" content="天雨">
+  
+  <meta name="description" content="Python 基础技术要点解析1. 变量与数据类型动态类型特性Python是动态类型语言，变量类型在运行时自动推断：
+1234name = &amp;quot;Alice&amp;quot;  # 字符串age = 25        # 整型height = 1.75   # 浮点型is_student = Tr">
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <meta property="og:title" content="常见问题自助解决文档"/>
+  <meta property="og:site_name" content="天雨"/>
+
+  
+    <meta property="og:image" content=""/>
+  
+
+  
+    <link rel="alternative" href="/atom.xml" title="天雨" type="application/atom+xml">
+  
+  
+    <link href="/favicon.png" rel="icon">
+  
+  
+  <link rel="stylesheet" href="/css/bootstrap.min.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/font-awesome.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/highlight.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/google-fonts.css" media="screen" type="text/css">
+  <link rel="stylesheet" href="/css/responsive.css" media="screen" type="text/css">  
+  <link rel="stylesheet" href="/css/sidenav.css" media="screen" type="text/css">  
+  <!--[if lt IE 9]><script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+
+  <script src="/js/jquery-2.0.3.min.js"></script>
+
+  <!-- analytics -->
+  
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-XXXXX-X']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+
+ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body id="body" data-spy="scroll" data-target=".toc">
+  <div class="container" id="container">
+	<div class="content">
+	  <div class="page-header">		
+  <h1><a class="brand" href="/">天雨</a><span class="split"></span><span class="title">常见问题自助解决文档</span><span class="date" id="title-date"><i class="fa fa-clock-o"></i> 2025-02-27</span></h1>
+</div>		
+
+<div class="row page">
+  <!-- cols -->	
+  
+  <div class="col-xs-12 col-sm-3 col-md-3 toc"> 
+	<!-- toc -->
+<script type="text/javascript">
+		jQuery(document).ready(function() {
+ 		   generateWikiTOC('.note', '.toc',  2 , 2 );
+		});
+</script>
+  </div><!-- col-md-3 -->
+  
+  
+
+  
+  <div class="col-xs-12 col-sm-9 col-md-9 note">
+	
+
+	  <!-- content -->
+	  <h1 id="Python-基础技术要点解析"><a href="#Python-基础技术要点解析" class="headerlink" title="Python 基础技术要点解析"></a>Python 基础技术要点解析</h1><h2 id="1-变量与数据类型"><a href="#1-变量与数据类型" class="headerlink" title="1. 变量与数据类型"></a>1. 变量与数据类型</h2><h3 id="动态类型特性"><a href="#动态类型特性" class="headerlink" title="动态类型特性"></a>动态类型特性</h3><p>Python是动态类型语言，变量类型在运行时自动推断：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">name = <span class="string">&quot;Alice&quot;</span>  <span class="comment"># 字符串</span></span><br><span class="line">age = <span class="number">25</span>        <span class="comment"># 整型</span></span><br><span class="line">height = <span class="number">1.75</span>   <span class="comment"># 浮点型</span></span><br><span class="line">is_student = <span class="literal">True</span>  <span class="comment"># 布尔型</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="类型转换"><a href="#类型转换" class="headerlink" title="类型转换"></a>类型转换</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">num_str = <span class="string">&quot;123&quot;</span></span><br><span class="line">num_int = <span class="built_in">int</span>(num_str)  <span class="comment"># 字符串转整型</span></span><br><span class="line">float_num = <span class="built_in">float</span>(<span class="string">&quot;3.14&quot;</span>)  <span class="comment"># 字符串转浮点型</span></span><br><span class="line">str_num = <span class="built_in">str</span>(<span class="number">100</span>)  <span class="comment"># 数字转字符串</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="2-列表与元组"><a href="#2-列表与元组" class="headerlink" title="2. 列表与元组"></a>2. 列表与元组</h2><h3 id="列表（可变序列）"><a href="#列表（可变序列）" class="headerlink" title="列表（可变序列）"></a>列表（可变序列）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">fruits = [<span class="string">&quot;apple&quot;</span>, <span class="string">&quot;banana&quot;</span>, <span class="string">&quot;cherry&quot;</span>]</span><br><span class="line">fruits.append(<span class="string">&quot;orange&quot;</span>)  <span class="comment"># 添加元素</span></span><br><span class="line">fruits[<span class="number">1</span>] = <span class="string">&quot;mango&quot;</span>     <span class="comment"># 修改元素</span></span><br><span class="line"><span class="built_in">print</span>(fruits[<span class="number">0</span>:<span class="number">2</span>])      <span class="comment"># 切片输出 [&#x27;apple&#x27;, &#x27;mango&#x27;]</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="元组（不可变序列）"><a href="#元组（不可变序列）" class="headerlink" title="元组（不可变序列）"></a>元组（不可变序列）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">colors = (<span class="string">&quot;red&quot;</span>, <span class="string">&quot;green&quot;</span>, <span class="string">&quot;blue&quot;</span>)</span><br><span class="line"><span class="comment"># colors[0] = &quot;yellow&quot;  # 会报错，元组不可修改</span></span><br><span class="line">coordinates = (<span class="number">12.5</span>, <span class="number">15.6</span>)  <span class="comment"># 适用于存储不可变数据</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="3-控制结构"><a href="#3-控制结构" class="headerlink" title="3. 控制结构"></a>3. 控制结构</h2><h3 id="条件语句"><a href="#条件语句" class="headerlink" title="条件语句"></a>条件语句</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">score = <span class="number">85</span></span><br><span class="line"><span class="keyword">if</span> score &gt;= <span class="number">90</span>:</span><br><span class="line">    grade = <span class="string">&quot;A&quot;</span></span><br><span class="line"><span class="keyword">elif</span> score &gt;= <span class="number">80</span>:</span><br><span class="line">    grade = <span class="string">&quot;B&quot;</span></span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    grade = <span class="string">&quot;C&quot;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="循环结构"><a href="#循环结构" class="headerlink" title="循环结构"></a>循环结构</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># for循环</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> <span class="built_in">range</span>(<span class="number">5</span>):  <span class="comment"># 0-4</span></span><br><span class="line">    <span class="built_in">print</span>(i)</span><br><span class="line"></span><br><span class="line"><span class="comment"># while循环</span></span><br><span class="line">count = <span class="number">3</span></span><br><span class="line"><span class="keyword">while</span> count &gt; <span class="number">0</span>:</span><br><span class="line">    <span class="built_in">print</span>(count)</span><br><span class="line">    count -= <span class="number">1</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="4-字典与集合"><a href="#4-字典与集合" class="headerlink" title="4. 字典与集合"></a>4. 字典与集合</h2><h3 id="字典（键值对）"><a href="#字典（键值对）" class="headerlink" title="字典（键值对）"></a>字典（键值对）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">person = &#123;</span><br><span class="line">    <span class="string">&quot;name&quot;</span>: <span class="string">&quot;Bob&quot;</span>,</span><br><span class="line">    <span class="string">&quot;age&quot;</span>: <span class="number">30</span>,</span><br><span class="line">    <span class="string">&quot;city&quot;</span>: <span class="string">&quot;New York&quot;</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="built_in">print</span>(person.get(<span class="string">&quot;age&quot;</span>, <span class="number">0</span>))  <span class="comment"># 安全获取值</span></span><br><span class="line">person[<span class="string">&quot;email&quot;</span>] = <span class="string">&quot;bob@example.com&quot;</span>  <span class="comment"># 添加新键值</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="集合（唯一元素）"><a href="#集合（唯一元素）" class="headerlink" title="集合（唯一元素）"></a>集合（唯一元素）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">unique_numbers = &#123;<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">2</span>, <span class="number">1</span>&#125;  <span class="comment"># 自动去重 → &#123;1,2,3&#125;</span></span><br><span class="line">vowels = &#123;<span class="string">&quot;a&quot;</span>, <span class="string">&quot;e&quot;</span>, <span class="string">&quot;i&quot;</span>, <span class="string">&quot;o&quot;</span>, <span class="string">&quot;u&quot;</span>&#125;</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;a&quot;</span> <span class="keyword">in</span> vowels)  <span class="comment"># 成员检测 → True</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="5-函数基础"><a href="#5-函数基础" class="headerlink" title="5. 函数基础"></a>5. 函数基础</h2><h3 id="函数定义与参数"><a href="#函数定义与参数" class="headerlink" title="函数定义与参数"></a>函数定义与参数</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">greet</span>(<span class="params">name, times=<span class="number">1</span></span>):  <span class="comment"># 带默认参数</span></span><br><span class="line">    <span class="keyword">for</span> _ <span class="keyword">in</span> <span class="built_in">range</span>(times):</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">f&quot;Hello, <span class="subst">&#123;name&#125;</span>!&quot;</span>)</span><br><span class="line">        </span><br><span class="line">greet(<span class="string">&quot;Alice&quot;</span>)       <span class="comment"># 使用默认参数</span></span><br><span class="line">greet(<span class="string">&quot;Bob&quot;</span>, times=<span class="number">3</span>)  <span class="comment"># 指定参数</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="返回值与作用域"><a href="#返回值与作用域" class="headerlink" title="返回值与作用域"></a>返回值与作用域</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">def</span> <span class="title function_">calculate</span>(<span class="params">x, y</span>):</span><br><span class="line">    total = x + y    <span class="comment"># 局部变量</span></span><br><span class="line">    <span class="keyword">return</span> total</span><br><span class="line"></span><br><span class="line">result = calculate(<span class="number">5</span>, <span class="number">3</span>)  <span class="comment"># 获取返回值 → 8</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="6-文件操作"><a href="#6-文件操作" class="headerlink" title="6. 文件操作"></a>6. 文件操作</h2><h3 id="基础读写"><a href="#基础读写" class="headerlink" title="基础读写"></a>基础读写</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 写入文件</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;data.txt&quot;</span>, <span class="string">&quot;w&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    f.write(<span class="string">&quot;First line\nSecond line&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment"># 读取文件</span></span><br><span class="line"><span class="keyword">with</span> <span class="built_in">open</span>(<span class="string">&quot;data.txt&quot;</span>, <span class="string">&quot;r&quot;</span>) <span class="keyword">as</span> f:</span><br><span class="line">    content = f.read()  <span class="comment"># 读取全部内容</span></span><br><span class="line">    lines = f.readlines()  <span class="comment"># 按行读取（需重新打开）</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="7-异常处理"><a href="#7-异常处理" class="headerlink" title="7. 异常处理"></a>7. 异常处理</h2><h3 id="基本try-except结构"><a href="#基本try-except结构" class="headerlink" title="基本try-except结构"></a>基本try-except结构</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">try</span>:</span><br><span class="line">    num = <span class="built_in">int</span>(<span class="built_in">input</span>(<span class="string">&quot;输入数字：&quot;</span>))</span><br><span class="line"><span class="keyword">except</span> ValueError:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;无效的数字输入！&quot;</span>)</span><br><span class="line"><span class="keyword">except</span> Exception <span class="keyword">as</span> e:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">f&quot;未知错误: <span class="subst">&#123;e&#125;</span>&quot;</span>)</span><br><span class="line"><span class="keyword">else</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;输入正确！&quot;</span>)</span><br><span class="line"><span class="keyword">finally</span>:</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;处理完成&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+<h2 id="关键要点总结"><a href="#关键要点总结" class="headerlink" title="关键要点总结"></a>关键要点总结</h2><ol>
+<li><strong>动态类型</strong>：变量类型自动推断，但需要注意类型转换</li>
+<li><strong>数据结构选择</strong>：<ul>
+<li>需要修改时用列表</li>
+<li>存储不可变数据用元组</li>
+<li>快速查找用字典</li>
+<li>去重用集合</li>
+</ul>
+</li>
+<li><strong>代码结构</strong>：<ul>
+<li>使用<code>with</code>语句管理资源</li>
+<li>避免过大的try-except块</li>
+</ul>
+</li>
+<li><strong>函数设计</strong>：<ul>
+<li>保持函数单一职责</li>
+<li>合理使用默认参数</li>
+<li>明确返回值类型</li>
+</ul>
+</li>
+</ol>
+	  
+
+	  <div>
+  		<center>
+		  <div class="pagination">
+<ul class="pagination">
+	
+	
+	
+	
+	
+	
+		
+			
+			
+		
+	
+		
+	
+	
+	
+		<li class="prev disabled"><a><i class="fa fa-arrow-circle-o-left"></i>Prev</a></li>
+	
+	<li><a href="/"><i class="fa fa-archive"></i>Home</a></li>
+	
+		<li class="next disabled"><a>Next<i class="fa fa-arrow-circle-o-right"></i></a></li>
+	
+</ul>
+</div>
+
+		</center>
+	  </div>
+	  
+	</div> <!-- col-md-9/col-md-12 -->
+	
+  </div><!-- row -->
+
+	</div>
+  </div>
+  <div class="container-narrow">
+	<footer> <p>
+  &copy; 2025 天雨
+   
+</p> </footer>
+  </div> <!-- container-narrow -->
+  
+<a id="gotop" href="#">   
+  <span>▲</span> 
+</a>
+
+<script src="/js/jquery.imagesloaded.min.js"></script>
+<script src="/js/gallery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/jquery.tableofcontents.min.js"></script>
+<script src="/js/tocgenerator.min.js"></script>
+<script src="/js/main.js"></script>
+<script src="/js/search.js"></script> 
+
+
+
+
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.css" media="screen" type="text/css">
+<script src="/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript">
+(function($){
+  $('.fancybox').fancybox();
+})(jQuery);
+</script>
+
+
+
+   <script type="text/javascript">      
+     var search_path = "search.xml";
+	 if (search_path.length == 0) {
+	 	search_path = "search.xml";
+	 }
+	 var path = "/" + search_path;
+     searchFunc(path, 'local-search-input', 'local-search-result');
+   </script>
+
+
+</body>
+</html>
