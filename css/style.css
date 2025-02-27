@@ -246,6 +246,8 @@ h1{
 }
 
 h1,h2,h3,h4,h5,h6{
+  text-decoration: none; /* 移除下划线 */
+  border-bottom: none;   /* 移除边框下划线 */
   text-rendering:optimizelegibility;
   font-weight:bold;
   font-family: 'Open Sans', "Helvetica Neue", "Helvetica","Microsoft YaHei", "WenQuanYi Micro Hei",Arial, sans-serif;
@@ -254,13 +256,11 @@ h1,h2,h3,h4,h5,h6{
 h2{
   margin: 0.83em 0;
   color: green;
-  border-bottom: 2px #ccc solid;
   padding-top: 40px;
   margin-top: -45px;
 }
 
 h3 {
-  border-bottom: 1.5px solid #dcdce9;
   margin-top: -5px;
   color: #9C4C17;
 }
